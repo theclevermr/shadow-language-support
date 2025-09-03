@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Shadow",
+  "scopeName": "source.shadow",
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.shadow",
+      "match": "//.*"
+    },
+    {
+      "name": "string.quoted.double.shadow",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.shadow",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.flow.shadow",
+      "match": "\\b(if|else|while|for|in|return|break|continue)\\b"
+    },
+    {
+      "name": "storage.type.declaration.shadow",
+      "match": "\\b(let|mut|fn)\\b"
+    },
+    {
+      "name": "support.function.builtin.shadow",
+      "match": "\\b(print|len|type|input|to_int|to_float|to_str|keys|values)\\b"
+    },
+    {
+      "name": "entity.name.function.shadow",
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\("
+    },
+    {
+      "name": "variable.other.shadow",
+      "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b"
+    },
+    {
+      "name": "constant.language.shadow",
+      "match": "\\b(true|false|null)\\b"
+    },
+    {
+      "name": "constant.numeric.shadow",
+      "match": "\\b-?[0-9]+(?:\\.[0-9]+)?\\b"
+    },
+    {
+      "name": "keyword.operator.logical.shadow",
+      "match": "\\b(and|or|not)\\b"
+    },
+    {
+      "name": "keyword.operator.comparison.shadow",
+      "match": "==|!=|<=|>=|<|>"
+    },
+    {
+      "name": "keyword.operator.arithmetic.shadow",
+      "match": "\\+|-|\\*|/|%"
+    },
+    {
+      "name": "keyword.operator.assignment.shadow",
+      "match": "="
+    },
+    {
+      "name": "punctuation.terminator.statement.shadow",
+      "match": ";"
+    },
+    {
+      "name": "punctuation.separator.comma.shadow",
+      "match": ","
+    },
+    {
+      "name": "punctuation.definition.block.shadow",
+      "match": "[{}]"
+    },
+    {
+      "name": "punctuation.definition.parameters.shadow",
+      "match": "[()]"
+    },
+    {
+      "name": "punctuation.definition.array.shadow",
+      "match": "[\\[\\]]"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+	"name": "shadow-language-support",
+	"displayName": "Shadow Language Support",
+	"description": "Language support for the Shadow language.",
+	"publisher": "theclevermr",
+	"version": "0.1.0",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/theclevermr/shadow-language-support"
+    },
+	"engines": {
+		"vscode": "^1.75.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "shadow",
+				"aliases": [
+					"Shadow",
+					"shadow"
+				],
+				"extensions": [
+					".shadow"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "shadow",
+				"scopeName": "source.shadow",
+				"path": "./syntaxes/shadow.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1754881586230,
+		"targetPlatform": "undefined",
+		"size": 5935
+	}
+}
